@@ -1,15 +1,13 @@
 html {
     font-family: Open Sans Semi-Light, Verdana, sans-serif;
+	background-color: #EEE;
+	margin: 0;
+	background-image: url('../illustrations/Website-Background.jpg');
 }
 
 body {
-    background-image: url('../illustrations/Website-Background.jpg');
-    margin-top: 0px;
-}
-
-html {
-	background-color: #EEE;
-	margin: 0;
+   
+   
 }
 
 
@@ -18,8 +16,6 @@ nav {
 	margin: auto;
 	margin-bottom: 25px;
 }
-
-
 
 nav ul {
 	display: block;
@@ -83,6 +79,7 @@ section {
 	padding: 40px;
 	padding-top: 20px;
 	margin-bottom: 40px;
+	min-height: 300px;
 }
 #s3slider {
     width: 800px; /* important to be same as image width */
@@ -127,3 +124,41 @@ section {
 .clear {
     clear: both;
 }
+div#dmsList{margin:0 auto;max-width:810px;}
+div#dmsList ul{padding:0;list-style:none;}
+div#dmsList li {margin:0;padding:0;float:left;width:33%;}
+div#dmsList li > div {
+            margin:6px;
+            background-color:white;
+			background-size: 100%;
+			background-position: center;
+            background-repeat:no-repeat;
+            max-width:258px;
+            text-align:center;
+            box-shadow:0 0 6px rgba(0,0,0,0.2);
+        }
+       div#dmsList li a {
+            background:rgba(51, 74, 87, 0.90) url(/Content/img/link.png) no-repeat 50% 76%;
+            display:block;
+            height:177px;
+            transition:all 0.5s;
+            text-decoration:none;
+            color:white;
+            position:relative;
+            font-size:18px;
+            
+            opacity:0;
+        }
+
+        div#dmsList li a:hover {opacity:1;}
+
+        div#dmsList li a div {
+            display:block;
+            width:100%;
+            position:absolute;
+            top:30px;
+            transition:top 0.1s ease-out 0.1s;
+        }
+        div#dmsList li:hover a div {
+            top:20px;
+        }
