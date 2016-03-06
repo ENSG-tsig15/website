@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Site internet du Master 2 TSIG de l'ENSG">
+    <meta name="author" content="TSIG2015">
+    
+    <!-- Icône du site -->
+    <link rel="icon" type="image/png" href="/illustrations/Logo-TSIG-G.png"/>
+    
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Master 2 TSIG de l'ENSG - Promotion 2015-2016</title>
+
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.css" rel="stylesheet"/>
+    	
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+	
+	<nav class="navbar navbar-default navbar-fixed-top"><!--.nav-collapse -->
+      <div class="container"><!--.container -->
+        <div class="navbar-header">
+          <img src="/illustrations/logoTSIG.png" alt="logoTSIG"/>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="promo.html">La promo'</a></li>
+            <li class="active"><a href="#">Les projets</a></li>
+           	<li><a href="ouvpro.html">L'ouverture professionnelle</a></li>
+           	<li><a href="contact.html">Contactez-nous !</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container -->
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Master 2 TSIG : La spécialisation en informatique appliquée à la géomatique.</h1>
+        <p>Tout au long de l'année, nous avons réalisé trois grands projets. Pour les voir en détail, c'est plus bas !</p>
+      </div>
+    </div>
+
+    <div class="container"><!-- début de div container -->
+    <!-- Example row of columns -->
+      <div class="row"><!-- début de div row -->
+        <div class="col-md-12"><!-- début de col-md-12 -->
+          		<h2>Nos projets</h2>
+					<div id="dmsList"><!-- début de div dmsList -->
+						<ul>
+        					<li>
+            					<div id="prj1_a" style="background-image:url(/illustrations/1.png);">
+                					<a  onclick="showdiv('prj_geom');" href="#prj1_a">
+                    					<div>
+                        					<h4>Projet géomatique</h4>
+                        						C++, OpenGl
+                    					</div>
+                					</a>
+            					</div>
+        					</li>
+        					<li>
+            					<div id="prj1_b" style="background-image:url(/illustrations/2.gif);">
+                					<a onclick="showdiv('prj_uml');" href="#prj1_b">
+                    					<div>
+                        					<h4>Architecture et de structuration</h4>
+                        						UML
+                    					</div>
+                					</a>
+            					</div>
+        					</li>
+        					<li>
+            					<div id="prj1_c" style="background-image:url(/illustrations/3.png);">
+                					<a onclick="showdiv('prj_long');" href="#prj1_c">
+                    					<div>
+                        					<h4>Publication des données géographiques</h4>
+                        						Automatisation
+                    					</div>
+                					</a>
+            					</div>
+        					</li>
+       					</ul><!-- fin de ul -->
+					</div><!-- fin de dmsList -->
+		</div><!-- fin de div col-md-12 -->			
+	  </div><!-- fin de div row -->
+	
+<!-- descriptions projets -->
+	<!-- description projet géomatique -->
+	<div class="row">
+		<div class ="col-md-12" id="prj_geom" style="display:none;">
+				<h3 style="color:#5c9610;">Le projet géomatique</h3>
+				<div id="description">
+				Il s'agit d'un projet dont l'objectif est de développer des programmes de traitement et de représentation de la donnée en 3 dimensions.
+				Un des exemples des programmes developpés par les étudiants est un programme qui permet de :
+					<ul>
+						<li>Afficher un MNT rectangulaire et régulier au format .xyz ;</li>
+						<li>Simuler une inondation (sans écoulement réaliste) à la vitesse de son choix ;</li>
+						<li>Calculer l'intersection entre l'eau et le MNT ;</li>
+						<li>Exporter l'isoligne d'intersection pour l'afficher dans un logiciel de SIG.</li>
+					</ul>
+				</div>
+		</div>
+		<!-- description projet ASI -->
+		<div class ="col-md-12" id="prj_uml" style="display:none;">
+				<h3 style="color:#5c9610;">Le projet de structuration et d'architecture</h3>
+				<div id="description">
+				Le projet « Architecture et structuration » consiste à modéliser le système d’information d’une entreprise avec le langage de modélisation unifié UML.
+				Compte tenu de notre background en modélisation, architecture et gestion de projet, nous avons travaillé en visant les objectifs suivants :
+					<ul>
+						<li>Organiser une visite d’immersion dans une entreprise gestionnaire de réseaux ;</li>
+						<li>Définir la problématique à traiter ;</li>
+						<li>Modéliser le système actuel ;</li>
+						<li>Mettre en exergue les faiblesses du système de fonctionnement existant ;</li>
+						<li>Proposer des pistes d’amélioration.</li>
+					</ul>
+				</div>
+		</div>
+		<!-- description projet long -->
+		<div class ="col-md-12" id="prj_long" style="display:none;">
+				<h3 style="color:#5c9610;">Le projet IDG</h3>
+				<div id="description">
+				La problématique de la structuration, le catalogage et la publication des données étant une des préoccupations 
+				des entreprises de nos jours, le programme de la filière TSIG prévoit un projet de 3 semaines où les élèves sont 
+				amenés à proposer une solution d’infrastructure intelligente pour la publication de données géographiques.
+				<br/>Cette année, le but est de mettre en place une chaîne de valeur pour la livraison et la publication automatique de la donnée géographique.
+				<br/>À partir d’une base de données géographiques, la solution ambitionnée doit générer des exports de la donnée sous différents formats 
+				et selon plusieurs critères (système de projection, emprise…)
+				<br/>La solution doit aussi permettre la publication de la donnée sous forme de services web.
+				<br/>Les données générées par la solution doivent être documentées et accompagnées de métadonnées expliquant les éléments de la génération automatique.
+				</div>
+		</div>
+	</div>
+<!-- fin descriptions projets -->		
+
+	<hr>
+
+      <footer class="row">
+        <div class="col-md-12" style="text-align:center;"><img src="/illustrations/logoENSG.png" alt="logoENSG"/></div>
+      </footer>
+</div><!-- fin de div container -->
+    
+    			
+	<!-- Bootstrap core JavaScript -->
+    <!-- ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script> -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+    
+	<!-- scripts pour animation Hanane -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/s3Slider.js" type="text/javascript"></script>
+	
+	<script type="text/javascript">
+	
+		var _hidediv = null;
+		
+		//afficher, cacher les blocs descriptions//
+		function showdiv(id) {
+    			if(_hidediv)
+        			_hidediv();
+    			var div = document.getElementById(id);
+    			div.style.display = 'block';
+    			_hidediv = function () { div.style.display = 'none'; };
+			}
+			
+		//scoll//
+		$(document).ready(function(){
+			$( "#prj1_a" ).click(function( event ) {
+  				event.preventDefault();
+  
+  				$('#prj_geom').animate({
+						height : $("#prj_geom").prop('scrollHeight')
+					}, 800);
+  				$('html, body').animate({
+						scrollTop:$('#prj_geom').offset().top
+					}, 'slow');
+  
+  			});
+  
+ 			$( "#prj1_b" ).click(function( event ) {
+  				event.preventDefault();
+  
+  				$('#prj_uml').animate({
+						height : $("#prj_uml").prop('scrollHeight')
+					}, 800);
+  				$('html, body').animate({
+						scrollTop:$('#prj_uml').offset().top
+					}, 'slow');
+  
+  			});
+  			
+  			$( "#prj1_c" ).click(function( event ) {
+  				event.preventDefault();
+  
+  				$('#prj_long').animate({
+						height : $("#prj_long").prop('scrollHeight')
+					}, 800);
+  				$('html, body').animate({
+						scrollTop:$('#prj_long').offset().top
+					}, 'slow');
+  
+  			});
+		});			
+	</script>
+	
+	
+	</body>
+</html>
