@@ -168,6 +168,12 @@
 
     </div> <!-- /.container -->
 
+	<footer class="footer">
+        	<div class="container" style="text-align:center;background-color:#E6EAED;">
+			<img src="../illustrations/logoensg.png" alt="logoensg"/>
+		</div>
+ 	</footer>
+
 		
 	<!-- Bootstrap core JavaScript -->
     <!-- ================================================== -->
