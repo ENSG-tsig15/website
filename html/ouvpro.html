@@ -125,7 +125,7 @@
     		<h4 style="color:#5c9610;">Infrastructures de Données Géographiques</h4> 
     			<p><ul>
     				<li>GéoMayenne</li>
-    				<li>GéoBretagne</li>
+    				<li>GéoNormandie</li>
     			</ul></p>
     	</div>
     	<div class="col-md-4">
@@ -245,17 +245,17 @@
     	var gmIcon = L.icon({
     		iconUrl: '../illustrations/geomayenne.png',
     		});
-    	var gmMarker = L.marker([48.069707, -0.766368]/*, {icon: gmIcon}*/).addTo(map);
+    	var gmMarker = L.marker([48.069696, -0.768515]/*, {icon: gmIcon}*/).addTo(map);
     	
-    	gmMarker.bindPopup("<b>GEOMAYENNE</b><br>Département de la Mayenne");
+    	gmMarker.bindPopup("<b>GEOMAYENNE</b><br>GéoMayenne");
     	
-    	//Geobretagne
-    	var gbIcon = L.icon({
-    		iconUrl: '../illustrations/geobretagne.png',
+    	//Geonormandie
+    	var gnIcon = L.icon({
+    		iconUrl: '../illustrations/geonormandie.png',
     		});
-    	var gbMarker = L.marker([48.114352, -1.674541]/*, {icon: gbIcon}*/).addTo(map);
+    	var gnMarker = L.marker([49.1796746, -0.3635617]/*, {icon: gbIcon}*/).addTo(map);
     	
-    	gbMarker.bindPopup("<b>GEOBRETAGNE</b><br>Région Bretagne");
+    	gnMarker.bindPopup("<b>GEONORMANDIE</b><br>GéoNormandie");
     	
     	//BSPP
     	var bsppIcon = L.icon({
