@@ -101,7 +101,7 @@
     			<p><ul>
     				<li>Communauté d'agglomération de la Plaine Centrale du Val-de-Marne</li>
     				<li>Conseil Départemental de la Seine-Saint-Denis</li>
-    				<li>Ministère de l'écologie, du Développement Durable et de l'Énergie</li>
+    				<li>Mission de l'Information Géographique (MIG) du Ministère de l'Écologie, du Développement Durable et de l'Énergie</li>
     				<li>Parc Naturel Régional du Gâtinais</li>
     			</ul></p>
     	</div>
@@ -131,9 +131,10 @@
     	<div class="col-md-4">
     		<h4 style="color:#5c9610;">Producteurs de données</h4> 
     			<p><ul>
+                    <li>Bureau de Recherches Géologiques et Minières (BRGM)</li>
     				<li>Google</li>
     				<li>Here</li>
-    				<li>Institut National de l'Information Géographique et Forestière</li>
+                    <li>Institut National de l'Information Géographique et Forestière (IGN) : Géoportail</li>
     				<li>TomTom</li>
     			</ul></p>
     	</div>
@@ -161,7 +162,7 @@
     	<div class="col-md-4">
     		<h4 style="color:#5c9610;">Transport</h4> 
     			<p><ul>
-    				<li>Ratp</li></li>
+    				<li>RATP</li></li>
     			</ul></p>
     	</div>
     </div><!-- /.row --> 
@@ -343,9 +344,15 @@
     		});
     	var ratpMarker = L.marker([48.851187, 2.487740]/*, {icon: ratpIcon}*/).addTo(map);
     	
-    	ratpMarker.bindPopup("<b>RATP</b><br>50 avenue Roger Salengro<br>94724 Fontenay-sous-Bois Cedex");
+    	ratpMarker.bindPopup("<b>BRGM</b><br>50 avenue Roger Salengro<br>94724 Fontenay-sous-Bois Cedex");
     			
-    			
+                //RATP
+                var BRGMIcon = L.icon({
+                    iconUrl: '../illustrations/ratp.jpg',
+                     });
+                var BRGMMarker = L.marker([47.829932, 1.938303]/*, {icon: BRGMIcon}*/).addTo(map);
+                                      
+          BRGMMarker.bindPopup("<b>BRGM</b><br>3 Avenue Claude Guillemin BP 36009 <br> 45060 Orléans Cedex 2");
     </script>
     
 	</body>
