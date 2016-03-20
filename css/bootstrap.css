@@ -56,19 +56,19 @@ div#dmsList {
 	margin:0 auto;
 	max-width:800px;
 	}
-	
+
 div#dmsList ul {
 	padding:0;
 	list-style:none;
 	}
-	
+
 div#dmsList li {
 	margin:0;
 	padding:0;
 	float:left;
 	width:33%;
 	}
-	
+
 div#dmsList li > div {
     margin:6px;
     background-color:white;
@@ -79,7 +79,7 @@ div#dmsList li > div {
     text-align:center;
     box-shadow:0 0 6px rgba(0,0,0,0.2);
     }
-        
+
 div#dmsList li a {
     background:rgba(51, 74, 87, 0.90);
     display:block;
@@ -103,7 +103,7 @@ div#dmsList li a div {
     top:30px;
     transition:top 0.1s ease-out 0.1s;
     }
-        
+
 div#dmsList li:hover a div {
     top:20px;
     }
@@ -152,7 +152,8 @@ abbr[title] {
 }
 b,
 strong {
-  font-weight: bold;
+  font-weight: normal;
+  font-family: Open Sans Semi-Light, sans-serif, Verdana;
 }
 dfn {
   font-style: italic;
@@ -5078,6 +5079,10 @@ a.badge:focus {
   font-weight: 200;
 text-align: justify;
 }
+.jumbotron p strong {
+  font-weight: 200;
+}
+
 .jumbotron > hr {
   border-top-color: #333;
 }
